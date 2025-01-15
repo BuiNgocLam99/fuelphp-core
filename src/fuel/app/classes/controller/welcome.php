@@ -34,6 +34,7 @@ class Controller_Welcome extends Controller
 		exit();
 
 		// Comment to test Git
+		// Comment for rebase
 
 		return Response::forge(View::forge('welcome/index'));
 	}
