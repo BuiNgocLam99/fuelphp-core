@@ -33,6 +33,9 @@ class Controller_Welcome extends Controller
 		Debug::dump(Config::get('db.active'));
 		exit();
 
+		// Comment to test Git
+		// Comment for rebase
+
 		return Response::forge(View::forge('welcome/index'));
 	}
 
