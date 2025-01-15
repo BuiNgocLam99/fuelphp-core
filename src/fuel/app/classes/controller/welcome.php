@@ -29,6 +29,9 @@ class Controller_Welcome extends Controller
 	 */
 	public function action_index()
 	{
+		Debug::dump(Config::get('db.active'));
+		exit();
+
 		return Response::forge(View::forge('welcome/index'));
 	}
 
