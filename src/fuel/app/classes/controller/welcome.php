@@ -29,6 +29,7 @@ class Controller_Welcome extends Controller
 	 */
 	public function action_index()
 	{
+		// Test Git
 		Debug::dump(Config::get('db.active'));
 		exit();
 
