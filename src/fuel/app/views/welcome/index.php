@@ -37,6 +37,7 @@
 	</header>
 	<div class="container">
 		<div class="jumbotron">
+			// test stash
 			<h1>Welcome!</h1>
 			// test stash
 			<p>You have successfully installed the Fuel PHP Framework.</p>
