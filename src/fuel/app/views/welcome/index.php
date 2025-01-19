@@ -38,6 +38,7 @@
 	<div class="container">
 		<div class="jumbotron">
 			<h1>Welcome!</h1>
+			// test stash
 			<p>You have successfully installed the Fuel PHP Framework.</p>
 			<p><a class="btn btn-primary btn-lg" href="https://docs.fuelphp.com">Read the Docs</a></p>
 		</div>
