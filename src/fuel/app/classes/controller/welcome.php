@@ -21,6 +21,31 @@
  */
 class Controller_Welcome extends Controller
 {
+
+	/**
+	 * Get onmousedown params
+	 *
+	 * @param array $shop
+	 * @return array
+	 * @author b_ngoclam
+	 */
+	public function get_onmousedown_params(array $shop): array
+	{
+		return [];
+	}
+
+	/**
+	 * Make onmousedown params to string
+	 *
+	 * @param array $shop
+	 * @return string
+	 * @author b_ngoclam
+	 */
+	public function make_onmousedown_str(array $param): string
+	{
+		return '';
+	}
+
 	/**
 	 * The basic welcome message
 	 *
@@ -29,20 +54,29 @@ class Controller_Welcome extends Controller
 	 */
 	public function action_index()
 	{
+		// Test Git
+		Debug::dump(Config::get('db.active'));
+		exit();
+
 		return Response::forge(View::forge('welcome/index'));
 	}
 
-	/**
-	 * A typical "Hello, Bob!" type example.  This uses a Presenter to
-	 * show how to use them.
-	 *
-	 * @access  public
-	 * @return  Response
-	 */
-	public function action_hello()
+
+    /**
+     *
+     *
+     * @param array $shop
+     * @param int $number
+     * @param string $test
+     * @return mixed
+     */
+    public function action_hello(array $shop = [], int $number = 0, string $test = '')
 	{
 		return Response::forge(Presenter::forge('welcome/hello'));
 	}
+
+
+
 
 	/**
 	 * The 404 action for the application.
@@ -54,4 +88,7 @@ class Controller_Welcome extends Controller
 	{
 		return Response::forge(Presenter::forge('welcome/404'), 404);
 	}
+
+	// here
+	// here1
 }
