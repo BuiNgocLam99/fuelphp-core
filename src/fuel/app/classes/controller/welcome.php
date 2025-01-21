@@ -88,4 +88,8 @@ class Controller_Welcome extends Controller
 	{
 		return Response::forge(Presenter::forge('welcome/404'), 404);
 	}
+
+	// before amend
+
+	// after amend
 }
